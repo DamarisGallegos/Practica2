@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#140137"
+    android:padding="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTES:"
+        android:layout_marginTop="30dp"
+        android:textAlignment="textEnd"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese el texto:"
+        android:fontFamily="casual"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/txtFr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:backgroundTint="@color/white"
+        android:background="@color/white"
+        android:minHeight="150dp"
+        android:textColor="#8C199F"
+        android:fontFamily="casual"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nombre de la nota:"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="casual"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="prueba.txt"
+        android:minHeight="40dp"
+        android:textColor="#8C199F"
+        android:fontFamily="casual"
+        android:background="@color/white"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Guardar en: "
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="casual"
+            />
+
+        <RadioButton
+            android:id="@+id/rbIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Archivo memoria INTERNA"
+            android:textColor="@color/white"
+            android:fontFamily="casual"/>
+
+        <RadioButton
+            android:id="@+id/rbEx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Archivo memoria SD"
+            android:textColor="@color/white"
+            android:fontFamily="casual"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:id="@+id/save"
+            android:layout_marginRight="20dp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#18909F"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Abrir"
+            android:id="@+id/open"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#18909F"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
